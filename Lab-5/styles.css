@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input[type=text], select {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+  }
+  
+  input[type=text]:disabled {
+    background-color: #e9ecef;
+  }
+  
+  input[type=range] {
+    margin-top: 5px;
+  }
+  
+  #tipValue {
+    display: inline-block;
+  }
+  
+  #errorMessage {
+    font-size: small;
+  }
+  
+  #conversionRates {
+    margin-top: 15px;
+  }
