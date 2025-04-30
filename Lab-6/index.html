@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunrise & Sunset Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sunrise & Sunset Dashboard</h1>
+    <p>Powered by <a href="https://sunrisesunset.io/api/" target="_blank" rel="noopener">SunriseSunset.io API</a></p>
+  </header>
+  <main>
+    <section class="controls">
+      <label for="locationSelect">Choose a location:</label>
+      <select id="locationSelect">
+        <option value="" selected disabled hidden>Select City</option>
+        <!-- Example locations with coordinates -->
+        <option value="41.8781,-87.6298">Chicago, IL</option>
+        <option value="34.0522,-118.2437">Los Angeles, CA</option>
+        <option value="40.7128,-74.0060">New York, NY</option>
+        <option value="51.5074,-0.1278">London, UK</option>
+        <option value="35.6895,139.6917">Tokyo, Japan</option>
+        <option value="48.8566,2.3522">Paris, France</option>
+        <option value="55.7558,37.6173">Moscow, Russia</option>
+        <option value="-33.8688,151.2093">Sydney, Australia</option>
+        <option value="19.4326,-99.1332">Mexico City, Mexico</option>
+        <option value="28.6139,77.2090">New Delhi, India</option>
+      </select>
+      <button id="useCurrentLocation">Use Current Location</button>
+    </section>
+
+    <section id="dashboard">
+      <div class="placeholder">Select a location or use your current location to see sunrise and sunset times.</div>
+    </section>
+    <div id="error" class="error"></div>
+  </main>
+  <footer>
+    <p>
+      <span class="muted">Lab 6 – ITMD 541</span>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
